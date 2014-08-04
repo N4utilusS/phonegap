@@ -10,6 +10,7 @@ var video = document.querySelector('video');
 
 if(navigator.getUserMedia)
 {
+	alert("hey");
     navigator.getUserMedia({video: true},function(stream) {
     video.src = window.URL.createObjectURL(stream);
     },onFailSoHard);
